@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   res.json({counter: counter})
 });
 
-router.get('/add', function(req, res, next){
+router.post('/add', function(req, res, next){
     counter = counter + 1;
     res.json({counter: counter});
 });

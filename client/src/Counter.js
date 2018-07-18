@@ -14,7 +14,7 @@ class Counter extends Component {
 
     addOne(){
         console.log('this')
-        axios.get('/counter/add')
+        axios.post('/counter/add', {})
         .then(({ data }) => {this.setState(data)})
     }
 
